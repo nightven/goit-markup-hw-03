@@ -16,7 +16,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-/* styles for index.html */
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -54,12 +53,28 @@ ul {
 img {
   display: block;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* defolt */
 .list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
+/* styles for index.html */
+
 /**
   |============================
   | header section
@@ -139,7 +154,9 @@ img {
 .address-list-item {
   margin-right: 40px;
 }
-
+.address-list-item:last-child {
+  margin-right: 0;
+}
 /**
   |============================
   | hero section
@@ -150,11 +167,6 @@ img {
   padding: 188px 0;
   text-align: center;
   background-color: var(--dark-color);
-}
-
-.hero .container {
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -223,9 +235,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-.list.features {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.features-description {
   display: flex;
   gap: 24px;
 }
@@ -268,7 +278,9 @@ img {
 .product-list-item {
   margin-right: 24px;
 }
-
+.product-list-item:last-child {
+  margin-right: 0;
+}
 .list.product:nth-last-child(3n) {
   margin-right: 0;
 }
@@ -286,9 +298,6 @@ img {
 
   background-color: var(--light-color);
 }
-.team .container {
-  padding-top: 150px;
-}
 
 .team .list {
   display: flex;
@@ -296,7 +305,6 @@ img {
 }
 
 .team-item {
-  padding-bottom: 32px;
   flex-basis: calc((100% - 72px) / 4);
 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -326,9 +334,6 @@ img {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.02em;
-}
-.img {
-  margin-bottom: 32px;
 }
 
 .team-descr {
