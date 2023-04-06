@@ -369,7 +369,7 @@ img {
   |============================
 */
 .section-portfolio {
-  padding: 96px 120px;
+  padding: 96px 0 120px;
 }
 
 /* filter */
@@ -381,7 +381,7 @@ img {
   padding: 12px 24px;
 
   background: var(--light-color);
-
+  color: var(--primary-barnd-color);
   border: 1px solid var(--heder-border-cl);
   border-radius: 4px;
   cursor: pointer;
