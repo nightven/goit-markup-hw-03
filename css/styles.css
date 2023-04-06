@@ -148,15 +148,9 @@ img {
 }
 .address .list {
   display: flex;
-  /* gap: 40px; */
+  gap: 40px;
 }
 
-.address-list-item {
-  margin-right: 40px;
-}
-.address-list-item:last-child {
-  margin-right: 0;
-}
 /**
   |============================
   | hero section
@@ -274,13 +268,7 @@ img {
 
 .list.product {
   display: flex;
-  /* gap: 24px; */
-}
-.product-list-item {
-  margin-right: 24px;
-}
-.product-list-item:last-child {
-  margin-right: 0;
+  gap: 24px;
 }
 
 .title.product {
